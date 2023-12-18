@@ -1,0 +1,17 @@
+.list-category-item {
+    display: flex;
+    justify-content: space-between;
+    border-width: 1px !important;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.custom-color-blue {
+    color: rgba(0, 51, 102, 1) !important;
+}
+
+.container-height {
+    height: fit-content;
+}

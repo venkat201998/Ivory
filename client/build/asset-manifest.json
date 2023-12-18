@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5497b740.css",
+    "main.js": "/static/js/main.44e834bc.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/KelliAvilaPhoto-632.jpg": "/static/media/KelliAvilaPhoto-632.c0af93664ef0b5ba4369.jpg",
+    "index.html": "/index.html",
+    "main.5497b740.css.map": "/static/css/main.5497b740.css.map",
+    "main.44e834bc.js.map": "/static/js/main.44e834bc.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5497b740.css",
+    "static/js/main.44e834bc.js"
+  ]
+}

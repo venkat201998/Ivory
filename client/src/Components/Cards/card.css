@@ -1,0 +1,61 @@
+.card {
+     width: 17rem;
+}
+
+.no-border {
+     border-right: 1px solid black !important;
+     border-left: 0;
+     border-top: 0;
+     border-bottom: 0;
+}
+
+.btn-hollow {
+     border: 1px solid rgba(0, 51, 102, 1) !important;
+     color: rgba(0, 51, 102, 1) !important;
+     font-weight: 500 !important;
+
+     .custom-text-color {
+          color: rgba(0, 51, 102, 1) !important;
+          font-weight: 500 !important;
+     }
+}
+
+.btn-hollow:hover {
+     background: rgba(0, 51, 102, 1) !important;
+     color: rgb(255, 255, 255, 1) !important;
+     font-weight: 500 !important;
+
+     .custom-text-color {
+          color: rgb(255, 255, 255, 1) !important;
+          font-weight: 500 !important;
+     }
+}
+
+.btn-filled {
+     background: rgba(0, 51, 102, 1) !important;
+     color: rgb(255, 255, 255, 1) !important;
+     font-weight: 500 !important;
+
+     .custom-text-color {
+          color: rgb(255, 255, 255, 1) !important;
+          font-weight: 500 !important;
+     }
+}
+
+.btn-filled:hover {
+     border: 1px solid rgba(0, 51, 102, 1) !important;
+     color: rgba(0, 51, 102, 1) !important;
+     background: rgb(255, 255, 255, 1) !important;
+     font-weight: 500 !important;
+
+     .custom-text-color {
+          color: rgba(0, 51, 102, 1) !important;
+          font-weight: 500 !important;
+     }
+}
+
+.bi-trash {
+     display: inline-block;
+     color: rgba(0, 51, 102, 1) !important;
+     font-size: 20px;
+}

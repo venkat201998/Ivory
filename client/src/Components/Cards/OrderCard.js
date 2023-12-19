@@ -14,7 +14,7 @@ const OrderCard = ({ order, handleAcceptOrder, handleDeclineOrder }) => {
     }, [users])
 
     const fetchUserDetails = () => {
-        let us = users && users.filter(user => user._id === order.orderdBy);
+        let us = users && users.filter(user => user.email === order.orderdBy);
         setUser(us);
     }
 
@@ -34,15 +34,15 @@ const OrderCard = ({ order, handleAcceptOrder, handleDeclineOrder }) => {
                         <div className='col-lg-5 col-12'>
                             <ul className='list-group p-0 m-0 flex-column'>
                                 <li className='list-group-item text-start border-0 p-1 bg-transparent'>
-                                    <span className='fw-bold'>{user && user[0].firstName} {user && user[0].lastName}</span>
+                                    <span className='fw-bold'>{user && user.length && user[0].firstName} {user && user.length && user[0].lastName}</span>
                                 </li>
                                 <li className='list-group-item text-start border-0 p-1 bg-transparent'>
                                     <label className='fw-bold me-2'>Phone</label>
-                                    <span>{user && user[0].contact}</span>
+                                    <span>{user && user.length && user[0].contact}</span>
                                 </li>
                                 <li className='list-group-item text-start border-0 p-1 bg-transparent'>
                                     <label className='fw-bold me-2'>Email</label>
-                                    <span>{user && user[0].email}</span>
+                                    <span>{user && user.length && user[0].email}</span>
                                 </li>
                                 <li className='list-group-item text-start border-0 p-1 bg-transparent'>
                                     <label className='fw-bold me-2'>Sub Total</label>
@@ -62,8 +62,8 @@ const OrderCard = ({ order, handleAcceptOrder, handleDeclineOrder }) => {
                                 </li>
                                 <li className='list-group-item row text-start border-0 p-1 bg-transparent'>
                                     <label className='fw-bold me-2'>Address</label>
-                                    <label>{user && user[0].address}</label>
-                                    <label>{user && user[0].city}, {user && user[0].state}, {user && user[0].pinCode}</label>
+                                    <label>{user && user.length && user[0].address}</label>
+                                    <label>{user && user.length && user[0].city}, {user && user.length && user[0].state}, {user && user.length && user[0].pinCode}</label>
                                 </li>
                                 <li className='list-group-item text-start border-0 p-1 bg-transparent'>
                                     <label className='fw-bold me-2'>Assigned To</label>

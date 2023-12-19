@@ -182,14 +182,14 @@ const CreateProduct = () => {
                                 <div className='form-group row p-0'>
                                     <div className='col-md-4 col-6 offset-md-3 text-start p-0'>
                                         <button
-                                            className='btn btn-raised btn-filled fw-bold me-3'
+                                            className='btn btn-raised btn-filled fw-bold me-md-3 me-1'
                                             type='submit'
                                             disabled={!title || !description || !price || !quantity || !category || (category === 'Select Product Category') || !(images && images.urls && images.urls.length)}
                                         >
                                             {checkParam ? 'Update' : 'Register'}
                                         </button>
                                         <button
-                                            className='btn btn-raised btn-hollow ms-3'
+                                            className='btn btn-raised btn-hollow ms-md-3 ms-1'
                                             type='clear'
                                             onClick={handleClear}
                                         >

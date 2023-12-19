@@ -23,6 +23,7 @@ const Modal = ({ btnTitle, title, product, count, selection, setCount, setSelect
 
     const handleSelection = (val) => {
         setSelection(val);
+        setCount(val);
     }
 
     const handleClick = () => {
@@ -54,6 +55,7 @@ const Modal = ({ btnTitle, title, product, count, selection, setCount, setSelect
                                 >
                                     {productQuantity && productQuantity.map(q => <option key={q} value={q}>{q}</option>)}
                                 </select>
+                                {console.log('Check-->count: ', count)}
                                 <span className='input-group-text border-0 bg-white m-0 px-1'>&#xd7;</span>
                                 <span className='input-group-text border-0 bg-white m-0 px-1'>&#36;{product.price}</span>
                                 <span className='input-group-text border-0 bg-white m-0 px-1'>&#61;</span>

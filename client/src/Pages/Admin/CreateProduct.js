@@ -180,7 +180,7 @@ const CreateProduct = () => {
                                     </div>
                                 </div>
                                 <div className='form-group row p-0'>
-                                    <div className='col-md-4 col-6 offset-md-3 text-start p-0'>
+                                    <div className='col-md-4 col-12 offset-md-3 text-start p-0'>
                                         <button
                                             className='btn btn-raised btn-filled fw-bold me-md-3 me-1'
                                             type='submit'

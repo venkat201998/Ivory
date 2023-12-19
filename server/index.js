@@ -4,10 +4,11 @@ const cors = require("cors");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const { readdirSync } = require("fs");
+require("dotenv").config();
 
 const app = express();
 
-mongoose.connect("mongodb+srv://ivory-vn:c2WS06w7GCXq2Thp@cluster0.rg83tmh.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DATABASE, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,

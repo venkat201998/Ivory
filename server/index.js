@@ -8,7 +8,7 @@ require("dotenv").config();
 
 const app = express();
 
-mongoose.connect(process.env.DATABASE, {
+mongoose.connect(process.env.EXPRESS_APP_MONGO_DB_KEY, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,

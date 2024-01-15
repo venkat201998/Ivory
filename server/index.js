@@ -23,6 +23,6 @@ app.use(cors());
 
 readdirSync("./routes").map((r) => app.use("/api", require("./routes/" + r)));
 
-const PORT = 8001;
+const PORT = process.env.EXPRESS_APP_PORT_NUMBER || 8000;
 
 app.listen(PORT, () => console.log(`Server is running at PORT: ${PORT}`));
